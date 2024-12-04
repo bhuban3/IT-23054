@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Cgp_and_grade_calculation {
+public class Cgpa_Calculator {
 
     public static void main(String[] args) {
         
