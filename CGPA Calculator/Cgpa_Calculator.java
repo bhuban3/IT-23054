@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Cgpa_Calculator {
+public class Cgpa_Calculator{
 
     public static void main(String[] args) {
         
@@ -31,22 +31,22 @@ public class Cgpa_Calculator {
 
             double total = ct + attendance + finalMark;
 
-            double tempGrade;
+            double grade;
 
-            if (total >= 80) tempGrade = 4;
+            if (total >= 80) grade = 4;
 
-               else if (total >= 75) tempGrade = 3.75;
-            else if (total >= 70) tempGrade = 3.5;
-            else if (total >= 65) tempGrade = 3.25;
-            else if (total >= 60) tempGrade = 3;
-            else if (total >= 55) tempGrade = 2.75;
-            else if (total >= 50) tempGrade = 2.50;
-            else if (total >= 45) tempGrade = 2.25;
-            else if (total >= 40) tempGrade = 2;
-            else tempGrade = 0;
+               else if (total >= 75) grade = 3.75;
+            else if (total >= 70) grade = 3.5;
+            else if (total >= 65) grade = 3.25;
+            else if (total >= 60) grade = 3;
+            else if (total >= 55) grade = 2.75;
+            else if (total >= 50) grade = 2.50;
+            else if (total >= 45) grade = 2.25;
+            else if (total >= 40) grade = 2;
+            else grade = 0;
 
             totalCredit=totalCredit+credit;
-            sum=sum+(tempGrade*credit);
+            sum=sum+(grade*credit);
         }
         finalResult=sum/totalCredit;
 
